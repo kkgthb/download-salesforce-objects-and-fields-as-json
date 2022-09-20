@@ -1,3 +1,12 @@
+
+## TL;DR for experienced devs
+
+```
+cci task run get_schema_details --org your-clever-alias
+```
+
+---
+
 ## Prereqs
 
 ### Install CumulusCI
