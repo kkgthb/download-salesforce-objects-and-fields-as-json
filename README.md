@@ -5,7 +5,7 @@
 cci task run get_schema_details --org your-clever-alias
 ```
 
-Dumps Task, Lead, and Contact definitions to `output/schema.json` if you edit nothing before running.
+Dumps Task, Lead, and Contact definitions to `output/schema.json` if you edit nothing before running.  [See example output.](https://github.com/kkgthb/download-salesforce-objects-and-fields-as-json/blob/main/example-output.json)
 
 ---
 
