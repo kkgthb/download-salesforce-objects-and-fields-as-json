@@ -5,6 +5,8 @@
 cci task run get_schema_details --org your-clever-alias
 ```
 
+Dumps Task, Lead, and Contact definitions to `output/schema.json` if you edit nothing before running.
+
 ---
 
 ## Prereqs
