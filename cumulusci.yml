@@ -1,0 +1,17 @@
+minimum_cumulusci_version: "3.31.0" # Change this every so often to stay up-to-date with what should be installed on most people's computers.
+project:
+    name: Download-Salesforce-Schema # CHANGE THIS FOR YOUR PROJECT.  Go change "orgName" in every ".json" file under /orgs/, too.
+    package:
+        name: Download-Salesforce-Schema # CHANGE THIS FOR YOUR PROJECT.  Go change "orgName" in every ".json" file under /orgs/, too.
+    git:
+        default_branch: "main"
+    source_format: sfdx
+tasks:
+    get_schema_details:
+        class_path: tasks.get_schema.SchemaDetailDumper
+        options:
+            filename: 'schema.json'
+            objects:
+                - Task
+                - Lead
+                - Contact
