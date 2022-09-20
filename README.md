@@ -83,6 +83,8 @@ _(You can call it something besides `schema.json` by editing the value of the `c
 
 If you run this script multiple times in a row, it will overwrite any old `schema.json` files, so if you needed something, back it up to elsewhere on your hard drive before running this script again.
 
-## Tell me what kinds of cool stuff you do with this data!
+## Share your wins
+
+[Tell me what kinds of cool stuff you do with this data!](https://katiekodes.com/cci-download-schema/)
 
 -[Katie Kodes](https://katiekodes.com/)
