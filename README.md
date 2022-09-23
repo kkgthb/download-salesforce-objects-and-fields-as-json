@@ -78,6 +78,8 @@ If you forget to log CumulusCI into the org you'd like to download from and give
 
 > Error: Org with name 'your-clever-alias' does not exist.
 
+---
+
 ## Run the downloader
 
 From a command-line prompt in your computer that's **running within** the context of **the folder** you downloaded this project to, run the following command:
@@ -94,8 +96,12 @@ _(You can call it something besides `schema.json` by editing the value of the `c
 
 If you run this script multiple times in a row, it will overwrite any old `schema.json` files, so if you needed something, back it up to elsewhere on your hard drive before running this script again.
 
-## Share your wins
+---
 
-[Tell me what kinds of cool stuff you do with this data!](https://katiekodes.com/cci-download-schema/)
+## Use cases
+
+* [blackhat-hemsworth](https://github.com/blackhat-hemsworth) built a [Python script that postprocesses `schema.json`](https://github.com/blackhat-hemsworth/Salesforce-to-Data-Cookbook) into a CSV file acceptable to [iData](https://www.idatainc.com/)'s [Data Cookbook](https://www.datacookbook.com/) cloud-based [data dictionary](https://en.wikipedia.org/wiki/Data_dictionary) product, so that each Salesforce object and field can get its own "Data Model" record in Data Cookbook, with all of the fields tucked tidily into their objects, and all of the lookup relationships and master-detail relationships arranged as Foreign Key cross-references.  From what blackhat-hemsworth tells me, there's even a visual schema browser inside Data Cookbook that's a little easier to use than Salesforce's schema browser.  Nice work.
+
+**Share your wins:**  [Tell me what kinds of cool stuff you do with this data!](https://katiekodes.com/cci-download-schema/)
 
 -[Katie Kodes](https://katiekodes.com/)
