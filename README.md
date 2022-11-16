@@ -11,27 +11,26 @@ Dumps Task, Lead, and Contact definitions to `output/schema.json` if you edit no
 
 ## Prereqs
 
-### Install CumulusCI
+### Step 1:  Install CumulusCI
 
 Install the [CumulusCI command-line tool](https://cumulusci.readthedocs.io/en/stable/get-started.html#install-cumulusci) onto your computer.
 
 _(I don't think you also need the [SFDX](https://developer.salesforce.com/tools/sfdxcli) command-line tool, a.k.a. "Salesforce CLI," installed onto your computer, but if these instructions don't work, see if that helps and let me know.)_
 
-### Download this codebase
+### Step 2:  Download this codebase
 
 Download a copy of this codebase into a folder on your computer's hard drive.
 
-### File edits
+### Step 3:  File edits
 
 In the copy of this codebase that you just downloaded, open the file `cumulusci.yml`.
 
-Edit the list `tasks.get_schema_details.options.objects` list within it to add/remove objects that you'd like to dump details from into a JSON format on your hard drive.
-
-Or just comment out _(or delete)_ the `objects` property altogether to dump all objects in the entire Salesforce org to disk.
+* Edit the list `tasks.get_schema_details.options.objects` list within it to add/remove objects that you'd like to dump details from into a JSON format on your hard drive _(default is just Task, Lead, and Contact)_.
+* Or just comment out _(or delete)_ the `objects` property altogether to dump **all objects** in the entire Salesforce org to disk.
 
 _(Note:  Either way, you're downloading everything.  The `objects` property just controls how big of a file you dump to disk.)_
 
-### Log the folder into an org with CCI
+### Step 4:  Log the folder on your hard drive into a Salesforce org with CCI
 
 From a command-line prompt in your computer that's **running within** the context of **the folder** you downloaded this project to...
 
@@ -49,11 +48,11 @@ Otherwise, pick something to use as an "alias" for the org within the context of
 
 From a command-line prompt in your computer that's **running within** the context of **the folder** you downloaded this project to, run one of the following commands:
 
-1. For a production org or [dev org](https://developer.salesforce.com/signup){:target="_blank"} that _doesn't_ have a custom domain, you'll do:
+1. For a production org or [dev org](https://developer.salesforce.com/signup) that _doesn't_ have a custom domain, you'll do:
     ```sh
     cci org connect your-clever-alias --global-org --login-url https://login.salesforce.com/
     ```
-1. For a production org or [dev org](https://developer.salesforce.com/signup){:target="_blank"} that that _does_ have a custom domain, you'll do:
+1. For a production org or [dev org](https://developer.salesforce.com/signup) that that _does_ have a custom domain, you'll do:
     ```sh
     cci org connect your-clever-alias --global-org --login-url https://your-custom-domain.my.salesforce.com/
     ```
@@ -80,7 +79,7 @@ If you forget to log CumulusCI into the org you'd like to download from and give
 
 ---
 
-## Run the downloader
+## Step 5:  Run the downloader
 
 From a command-line prompt in your computer that's **running within** the context of **the folder** you downloaded this project to, run the following command:
 
